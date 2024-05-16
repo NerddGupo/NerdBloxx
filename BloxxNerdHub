@@ -1,0 +1,27 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({Name = "Nerd Hub BloxFruits", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Tab = Window:MakeTab({
+	Name = "BloxFruits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+local Section = Tab:AddSection({
+	Name = "Scripts"
+})
+
+Tab:AddButton({
+	Name = "Matsune",
+	Callback = function()
+      	 loadstring(game:HttpGet("https://raw.githubusercontent.com/Yatsuraa/Yuri/main/Winterhub_V2.lua"))()
+  	end    
+})
+
+Tab:AddButton({
+	Name = "Mars",
+	Callback = function()
+      	 loadstring(game:HttpGet('https://raw.githubusercontent.com/1st-Mars/Annie/main/1st.lua'))()
+  	end    
+})
